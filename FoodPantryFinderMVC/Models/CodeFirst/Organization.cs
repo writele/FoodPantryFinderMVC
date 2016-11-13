@@ -9,8 +9,8 @@ namespace FoodPantryFinderMVC.Models
     public class Organization
     {
         public int Id { get; set; }
-        public int AddressId { get; set; }
-        public int ScheduleId { get; set; }
+        public int? AddressId { get; set; }
+        public int? ScheduleId { get; set; }
         public int FrequencyId { get; set; }
   
         [Required(ErrorMessage = "Your must provide a PhoneNumber")]
@@ -18,6 +18,9 @@ namespace FoodPantryFinderMVC.Models
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid Phone number")]
         public string PhoneNumber { get; set; }
-
+        public virtual Address Address { get; set; }
+        public virtual Schedule Schedule { get; set; }
+        public virtual Frequency Frequency { get; set; }
+       
     }
 }

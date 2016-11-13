@@ -202,6 +202,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CodeFirst\Address.cs" />
+    <Compile Include="Models\CodeFirst\City.cs" />
+    <Compile Include="Models\CodeFirst\County.cs" />
+    <Compile Include="Models\CodeFirst\Frequency.cs" />
+    <Compile Include="Models\CodeFirst\Organization.cs" />
+    <Compile Include="Models\CodeFirst\Schedule.cs" />
+    <Compile Include="Models\CodeFirst\State.cs" />
+    <Compile Include="Models\CodeFirst\ZipCode.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
