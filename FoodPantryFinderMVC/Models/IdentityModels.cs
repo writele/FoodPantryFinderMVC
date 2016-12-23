@@ -29,5 +29,15 @@ namespace FoodPantryFinderMVC.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Frequency> Frequencies { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<County> Counties { get; set; }
+        public DbSet<State> States { get; set; }
+        public DbSet<ZipCode> ZipCodes { get; set; }
+
     }
 }

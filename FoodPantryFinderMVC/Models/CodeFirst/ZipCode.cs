@@ -8,7 +8,6 @@ namespace FoodPantryFinderMVC.Models
     public class ZipCode
     {
         public int Id { get; set; }
-        public int StateId { get; set; }
         public string Code { get; set; }
         public ZipCode()
         {

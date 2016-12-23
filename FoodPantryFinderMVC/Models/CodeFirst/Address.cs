@@ -22,6 +22,7 @@ namespace FoodPantryFinderMVC.Models
         public virtual State State { get; set; }
         public virtual ZipCode ZipCode { get; set; }
         public virtual County County { get; set; }
+        [Required]
         public virtual Organization Organization { get; set; }
 
     }

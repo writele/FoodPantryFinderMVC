@@ -14,14 +14,8 @@ namespace FoodPantryFinderMVC.Models
         public State()
         {
             this.Addresses = new HashSet<Address>();
-            this.Cities = new HashSet<City>();
-            this.Counties = new HashSet<County>();
-            this.ZipCodes = new HashSet<ZipCode>();
         }
 
         public virtual ICollection<Address> Addresses { get; set; }
-        public virtual ICollection<City> Cities { get; set; }
-        public virtual ICollection<County> Counties { get; set; }
-        public virtual ICollection<ZipCode> ZipCodes { get; set; }
     }
 }
